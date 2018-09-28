@@ -1,4 +1,4 @@
-import { IOpenDataContainer } from 'open-data-container/IOpenDataContainer';
+import { IOpenDataContainer } from 'open-data-container-interface/IOpenDataContainer';
 import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
 import { BatchGetterSetter } from 'batch-getter-setter/BatchGetterSetter';
 
