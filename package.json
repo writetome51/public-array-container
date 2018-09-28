@@ -1,27 +1,19 @@
 {
-  "name": "@writetome51/open-array-content",
+  "name": "@writetome51/open-array-container",
   "version": "1.0.0",
-  "description": "an array-manipulating typescript/javascript class with properties and methods that give info about what is in the array",
+  "description": "an abstract typescript/javascript class meant to be extended by array-manipulating classes",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/writetome51/open-array-content.git"
   },
   "keywords": [
     "array",
     "manipulation",
     "typescript",
-    "classes"
+    "class"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/writetome51/open-array-content/issues"
-  },
-  "homepage": "https://github.com/writetome51/open-array-content#readme",
   "dependencies": {
     "basic-data-handling": "latest",
     "batch-getter-setter": "latest",
