@@ -2,7 +2,8 @@
   "name": "@writetome51/public-array-container",
   "version": "1.0.1",
   "description": "an abstract typescript/javascript class meant to be extended by array-manipulating classes",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -22,6 +23,9 @@
     "url": "https://github.com/writetome51/public-array-container/issues"
   },
   "homepage": "https://github.com/writetome51/public-array-container#readme",
+  "devDependencies": {
+    "typescript": "^3.0.1"
+  },
   "dependencies": {
     "basic-data-handling": "latest",
     "batch-getter-setter": "latest",
