@@ -26,5 +26,3 @@ export abstract class PublicArrayContainer extends BatchGetterSetter implements 
 
 
 }
-// test comments
-// aaaaa
