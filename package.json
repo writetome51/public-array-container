@@ -2,9 +2,9 @@
   "name": "@writetome51/public-array-container",
   "version": "1.0.1",
   "description": "an abstract typescript/javascript class meant to be extended by array-manipulating classes",
-  "main": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
