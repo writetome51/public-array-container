@@ -27,8 +27,8 @@
     "typescript": "^3.0.1"
   },
   "dependencies": {
-    "basic-data-handling": "latest",
-    "batch-getter-setter": "latest",
-    "public-data-container-interface": "latest"
+    "basic-data-handling": "1.0.13",
+    "batch-getter-setter": "1.0.0",
+    "public-data-container-interface": "1.0.3"
   }
 }

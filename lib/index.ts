@@ -17,8 +17,6 @@ export abstract class PublicArrayContainer extends BatchGetterSetter implements 
 	}
 
 
-	// Every time this.data is assigned value, it will be checked to see if it's an
-	// array:
 	set data(value) {
 		errorIfNotArray(value);
 		this._data = value;
