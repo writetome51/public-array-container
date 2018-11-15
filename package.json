@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/public-array-container",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "an abstract typescript/javascript class meant to be extended by array-manipulating classes",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
