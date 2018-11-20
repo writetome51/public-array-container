@@ -2,14 +2,13 @@ To include in your project:
 
 import { PublicArrayContainer } from '@writetome51/public-array-container';
 
-PublicArrayContainer is a TypeScript abstract class that is a dependency of the  
-PublicArray class  ( package:  @writetome51/public-array ).
+PublicArrayContainer is a TypeScript abstract class meant to be extended by array-manipulating classes.
 
 Its constructor requires an array argument.  
 It has no methods.  
 It has 1 property:
 
-data : any[] // read-writable
+    data : any[] // read-writable (this contains the actual array)
 
 
 Usage Example:
