@@ -1,14 +1,71 @@
-To include in your project:
+# PublicArrayContainer
 
-import { PublicArrayContainer } from '@writetome51/public-array-container';
+A TypeScript/JavaScript abstract class meant to be extended by array-manipulating  
+classes.
 
-PublicArrayContainer is a TypeScript abstract class meant to be extended by array-manipulating classes.
+## Installation
 
-Its constructor requires an array argument.  
-It has no methods.  
-It has 1 property:
+You must have npm installed first. Then, in the command line:
 
-    data : any[] // read-writable (this contains the actual array)
+    npm install @writetome51/public-array-container
+
+## Loading
+
+    // if using Typescript:
+    import { PublicArrayContainer } from '@writetome51/public-array-container';
+    // if using ES5 Javascript:
+    var PublicArrayContainer = 
+        require('@writetome51/public-array-container').PublicArrayContainer;
+
+
+## Constructor
+Requires an array argument.  This becomes the array it contains.
+
+## Properties
+
+    data : any[] (read-writable) // this is the actual array.
+    
+    className : string (read-only)
+
+## Methods
+```
+protected   _createGetterAndOrSetterForEach(
+		propertyNames: string[],
+		configuration: IGetterSetterConfiguration
+	   ) : void
+	   /*********************
+	   Use this method when you have a bunch of properties that need getter and/or 
+	   setter functions that all do the same thing. It attaches the same getter 
+	   function and setter function to each property.
+	   IGetterSetterConfiguration is this object:
+	   {
+	        get_setterFunction?: (
+	            propertyName: string, index?: number, propertyNames?: string[]
+	        ) => Function,
+	            // get_setterFunction takes the property name as first argument and 
+	            // returns the setter function.  The setter function must take one 
+	            // parameter and return void.
+	        
+	        get_getterFunction?: (
+	            propertyName: string, index?: number, propertyNames?: string[]
+	        ) => Function
+	            // get_getterFunction takes the property name as first argument and 
+	            // returns the getter function.  The getter function must return something.
+	   }
+	   *********************/ 
+	   
+	   
+protected   _returnThis_after(voidExpression: any) : this
+    // voidExpression is executed, then function returns this.
+    // Even if voidExpression returns something, the returned data isn't used.
+
+protected   _runMethod_and_returnThis(
+    callingObject, 
+    method: Function, 
+    methodArgs: any[], 
+    additionalAction?: Function // takes the result returned by method as an argument.
+) : this
+```
 
 
 Usage Example:
@@ -23,3 +80,11 @@ Usage Example:
 	
     }
     
+
+## Inheritance Chain
+
+PublicArrayContainer<--[BaseClass](https://github.com/writetome51/typescript-base-class#baseclass)
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

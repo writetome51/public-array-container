@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var errorIfNotArray_1 = require("basic-data-handling/errorIfNotArray");
-var BatchGetterSetter_1 = require("batch-getter-setter/BatchGetterSetter");
+var base_class_1 = require("@writetome51/base-class");
 var PublicArrayContainer = /** @class */ (function (_super) {
     __extends(PublicArrayContainer, _super);
     function PublicArrayContainer(_data) {
@@ -35,5 +35,5 @@ var PublicArrayContainer = /** @class */ (function (_super) {
         configurable: true
     });
     return PublicArrayContainer;
-}(BatchGetterSetter_1.BatchGetterSetter));
+}(base_class_1.BaseClass));
 exports.PublicArrayContainer = PublicArrayContainer;

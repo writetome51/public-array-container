@@ -1,9 +1,9 @@
 import { IPublicDataContainer } from 'public-data-container-interface/IPublicDataContainer';
 import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
-import { BatchGetterSetter } from 'batch-getter-setter/BatchGetterSetter';
+import { BaseClass } from '@writetome51/base-class';
 
 
-export abstract class PublicArrayContainer extends BatchGetterSetter implements IPublicDataContainer<any[]> {
+export abstract class PublicArrayContainer extends BaseClass implements IPublicDataContainer<any[]> {
 
 
 	constructor(private _data: any[]) {
