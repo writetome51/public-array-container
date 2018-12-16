@@ -68,7 +68,7 @@ protected   _runMethod_and_returnThis(
 ```
 
 
-Usage Example:
+## Usage Example
 
     export class PublicArrayContent extends PublicArrayContainer {
 
