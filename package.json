@@ -27,8 +27,8 @@
     "typescript": "^3.0.1"
   },
   "dependencies": {
-    "basic-data-handling": "~1.0.13",
-    "@writetome51/base-class": "~0.0.1",
+    "basic-data-handling": "~1.0.15",
+    "@writetome51/base-class": "~0.0.3",
     "public-data-container-interface": "~1.0.3"
   }
 }
