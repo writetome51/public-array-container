@@ -3,23 +3,23 @@
 A TypeScript/JavaScript abstract class meant to be extended by array-manipulating  
 classes.
 
-## Installation
+## Usage Example
 
-You must have npm installed first. Then, in the command line:
+    export class PublicArrayContent extends PublicArrayContainer {
 
-    npm install @writetome51/public-array-container
+        constructor(data = []) {
+            super(data);
+	    }
 
-## Loading
-
-    // if using Typescript:
-    import { PublicArrayContainer } from '@writetome51/public-array-container';
-    // if using ES5 Javascript:
-    var PublicArrayContainer = 
-        require('@writetome51/public-array-container').PublicArrayContainer;
-
+        // ... more code ...
+	
+    }
+    
 
 ## Constructor
-Requires an array argument.  This becomes the array it contains.
+```
+constructor(data: any[]) // 'data' is the array it will contain.
+```
 
 ## Properties
 
@@ -69,22 +69,24 @@ protected   _runMethod_and_returnThis(
 ```
 
 
-## Usage Example
-
-    export class PublicArrayContent extends PublicArrayContainer {
-
-        constructor(data = []) {
-		    super(data);
-	    }
-
-        // ... more code ...
-	
-    }
-    
-
 ## Inheritance Chain
 
 PublicArrayContainer<--[BaseClass](https://github.com/writetome51/typescript-base-class#baseclass)
+
+## Installation
+
+You must have npm installed first. Then, in the command line:
+
+    npm install @writetome51/public-array-container
+
+
+## Loading
+
+    // if using Typescript:
+    import { PublicArrayContainer } from '@writetome51/public-array-container';
+    // if using ES5 Javascript:
+    var PublicArrayContainer = 
+        require('@writetome51/public-array-container').PublicArrayContainer;
 
 
 ## License

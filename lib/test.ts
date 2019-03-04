@@ -20,3 +20,5 @@ let instance = testObject.logClassNameAndReturnThis();
 
 if (instance.className && instance.className === 'TestClass') console.log('test 1 passed');
 else console.log('test 1 FAILED');
+
+console.log(instance.data);
