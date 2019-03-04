@@ -23,7 +23,7 @@ constructor(data: any[]) // 'data' is the array it will contain.
 
 ## Properties
 
-    data : any[] (read-writable) // this is the actual array.
+    data : any[]  // this is the actual array.
     
     className : string (read-only)
 
