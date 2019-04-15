@@ -13,14 +13,14 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var errorIfNotArray_1 = require("basic-data-handling/errorIfNotArray");
+var error_if_not_array_1 = require("error-if-not-array");
 var base_class_1 = require("@writetome51/base-class");
 var PublicArrayContainer = /** @class */ (function (_super) {
     __extends(PublicArrayContainer, _super);
     function PublicArrayContainer(_data) {
         var _this = _super.call(this) || this;
         _this._data = _data;
-        errorIfNotArray_1.errorIfNotArray(_this._data);
+        error_if_not_array_1.errorIfNotArray(_this._data);
         return _this;
     }
     Object.defineProperty(PublicArrayContainer.prototype, "data", {
@@ -28,7 +28,7 @@ var PublicArrayContainer = /** @class */ (function (_super) {
             return this._data;
         },
         set: function (value) {
-            errorIfNotArray_1.errorIfNotArray(value);
+            error_if_not_array_1.errorIfNotArray(value);
             this._data = value;
         },
         enumerable: true,

@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/public-array-container",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "an abstract typescript/javascript class meant to be extended by array-manipulating classes",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,6 +15,7 @@
     "array",
     "manipulation",
     "typescript",
+    "abstract",
     "class"
   ],
   "author": "Steve Thompson",
@@ -23,11 +24,9 @@
     "url": "https://github.com/writetome51/public-array-container/issues"
   },
   "homepage": "https://github.com/writetome51/public-array-container#readme",
-  "devDependencies": {
-    "typescript": "^3.0.1"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "basic-data-handling": "~1.0.15",
+    "error-if-not-array": "~1.0.0",
     "@writetome51/base-class": "~0.0.3",
     "public-data-container-interface": "~1.0.3"
   }

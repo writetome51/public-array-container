@@ -1,5 +1,5 @@
 import { IPublicDataContainer } from 'public-data-container-interface/IPublicDataContainer';
-import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
+import { errorIfNotArray } from 'error-if-not-array';
 import { BaseClass } from '@writetome51/base-class';
 
 
