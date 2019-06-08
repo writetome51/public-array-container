@@ -4,31 +4,36 @@ A TypeScript/JavaScript abstract class meant to be extended by array-manipulatin
 classes.
 
 ## Usage Example
+```ts
+export class PublicArrayContent extends PublicArrayContainer {
 
-    export class PublicArrayContent extends PublicArrayContainer {
-
-        constructor(data = []) {
-            super(data);
-	    }
-
-        // ... more code ...
-	
+    constructor(data = []) {
+        super(data); 
     }
-    
+
+    // ... more code ...
+
+}
+```
 
 ## Constructor
-```
-constructor(data: any[]) // 'data' is the array it will contain.
+```ts
+constructor(data? = [])  // 'data' is assigned to this.data .
 ```
 
 ## Properties
-
-    data : any[]  // this is the actual array.
+```ts
+data : any[]  
+    // The actual array. Whenever assigned a value, its type is validated.
     
-    className : string (read-only)
+className : string (read-only)
+```
 
 ## Methods
-```
+<details>
+<summary>view methods</summary>
+
+```ts
 protected   _createGetterAndOrSetterForEach(
 		propertyNames: string[],
 		configuration: IGetterSetterConfiguration
@@ -60,34 +65,32 @@ protected   _returnThis_after(voidExpression: any) : this
     // voidExpression is executed, then function returns this.
     // Even if voidExpression returns something, the returned data isn't used.
 
-protected   _runMethod_and_returnThis(
-    callingObject, 
-    method: Function, 
-    methodArgs: any[], 
-    additionalAction?: Function // takes the result returned by method as an argument.
-) : this
+protected   _errorIfPropertyHasNoValue(
+                property: string, // can contain dot-notation, i.e., 'property.subproperty'
+                propertyNameInError? = ''
+            ) : void
+    // If value of this[property] is undefined or null, it triggers fatal error:
+    // `The property "${propertyNameInError}" has no value.`
 ```
-
+</details>
 
 ## Inheritance Chain
 
 PublicArrayContainer<--[BaseClass](https://github.com/writetome51/typescript-base-class#baseclass)
 
 ## Installation
-
-You must have npm installed first. Then, in the command line:
-
-    npm install @writetome51/public-array-container
-
+```
+npm i @writetome51/public-array-container
+```
 
 ## Loading
-
-    // if using Typescript:
-    import { PublicArrayContainer } from '@writetome51/public-array-container';
-    // if using ES5 Javascript:
-    var PublicArrayContainer = 
-        require('@writetome51/public-array-container').PublicArrayContainer;
-
+```ts
+// if using Typescript:
+import { PublicArrayContainer } from '@writetome51/public-array-container';
+// if using ES5 Javascript:
+var PublicArrayContainer = 
+    require('@writetome51/public-array-container').PublicArrayContainer;
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

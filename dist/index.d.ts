@@ -6,10 +6,10 @@ export declare abstract class PublicArrayContainer extends BaseClass implements 
 
 	data: any[];
 
-	private _data;
+	private __data;
 
 
-	constructor(_data: any[]);
+	constructor(__data?: any[]);
 
 
 }

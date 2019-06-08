@@ -17,19 +17,20 @@ var error_if_not_array_1 = require("error-if-not-array");
 var base_class_1 = require("@writetome51/base-class");
 var PublicArrayContainer = /** @class */ (function (_super) {
     __extends(PublicArrayContainer, _super);
-    function PublicArrayContainer(_data) {
+    function PublicArrayContainer(__data) {
+        if (__data === void 0) { __data = []; }
         var _this = _super.call(this) || this;
-        _this._data = _data;
-        error_if_not_array_1.errorIfNotArray(_this._data);
+        _this.__data = __data;
+        error_if_not_array_1.errorIfNotArray(_this.__data);
         return _this;
     }
     Object.defineProperty(PublicArrayContainer.prototype, "data", {
         get: function () {
-            return this._data;
+            return this.__data;
         },
         set: function (value) {
             error_if_not_array_1.errorIfNotArray(value);
-            this._data = value;
+            this.__data = value;
         },
         enumerable: true,
         configurable: true
