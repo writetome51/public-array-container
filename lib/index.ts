@@ -1,8 +1,9 @@
-import { BaseClass } from '@writetome51/base-class';
+import { IPublicDataContainer } from 'public-data-container-interface/IPublicDataContainer';
 import { errorIfNotArray } from 'error-if-not-array';
+import { BaseClass } from '@writetome51/base-class';
 
 
-export abstract class PublicArrayContainer extends BaseClass {
+export abstract class PublicArrayContainer extends BaseClass implements IPublicDataContainer<any[]> {
 
 
 	constructor(private __data = []) {
