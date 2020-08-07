@@ -84,12 +84,8 @@ npm i @writetome51/public-array-container
 ```
 
 ## Loading
-```ts
-// if using Typescript:
+```js
 import { PublicArrayContainer } from '@writetome51/public-array-container';
-// if using ES5 Javascript:
-var PublicArrayContainer = 
-    require('@writetome51/public-array-container').PublicArrayContainer;
 ```
 
 ## License

@@ -2,6 +2,7 @@
   "name": "@writetome51/public-array-container",
   "version": "3.0.0",
   "description": "an abstract typescript/javascript class meant to be extended by array-manipulating classes",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -26,8 +27,7 @@
   "homepage": "https://github.com/writetome51/public-array-container#readme",
   "devDependencies": {},
   "dependencies": {
-    "error-if-not-array": "~1.0.0",
-    "@writetome51/base-class": "^1.0.0",
-    "public-data-container-interface": "~1.0.3"
+    "error-if-not-array": "^2.0.0",
+    "@writetome51/base-class": "^2.0.0"
   }
 }
